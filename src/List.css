@@ -1,0 +1,84 @@
+table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+thead {
+  background: #4a90e2;
+  color: white;
+}
+
+thead th {
+  padding: 12px 10px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Table Body */
+tbody td {
+  padding: 10px;
+  font-size: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  background: #f1f5ff;
+  transition: 0.3s;
+}
+
+/* Buttons */
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Update Button */
+button:nth-child(1) {
+  background: #ffb020;
+  color: white;
+}
+
+/* Delete Button */
+button:nth-child(2),
+button:contains("Delete") {
+  background: #ff5252;
+  color: white;
+}
+
+/* Button hover */
+button:hover {
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  thead th {
+    font-size: 14px;
+  }
+
+  tbody td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

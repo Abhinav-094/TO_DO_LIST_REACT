@@ -1,0 +1,104 @@
+/* Main Container */
+#main_div {
+  width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #ffffff, #f3f7ff);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+/* On Hover Card Lift */
+#main_div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+#main_div h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #222;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Labels */
+#main_div label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+  margin-top: 12px;
+}
+
+/* Inputs & Select */
+#main_div input[type="text"],
+#main_div input[type="password"],
+#main_div select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  background: #ffffff;
+  border: 1px solid #ccd4e0;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+/* On Focus Effect */
+#main_div input:focus,
+#main_div select:focus {
+  border-color: #4a74ff;
+  box-shadow: 0 0 6px rgba(74, 116, 255, 0.4);
+}
+
+/* Radio, Checkbox */
+#main_div input[type="radio"],
+#main_div input[type="checkbox"] {
+  transform: scale(1.1);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Error/Success Message */
+#main_div span {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Submit Button */
+#main_div button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4a74ff, #1f52ff);
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+}
+
+/* Hover */
+#main_div button:hover {
+  background: linear-gradient(135deg, #1f52ff, #0037d6);
+  transform: translateY(-2px);
+}
+
+/* Disabled button */
+#main_div button:disabled {
+  background: gray;
+  cursor: not-allowed;
+  transform: none;
+}
