@@ -6,6 +6,10 @@ function List({ data, set_records }) {
     var updated_data = data.filter((item, index) => index !== id);
       set_records(updated_data);
   }
+  function update_fn()
+  {
+    
+  }
   return (
     <table
       border="1"
@@ -30,7 +34,6 @@ function List({ data, set_records }) {
         {data.map((item, index) => (
           <tr key={index}>
             <td>{index + 1}</td>
-
             <td>{item.name}</td>
             <td>{item.email}</td>
             <td>{item.pass}</td>
@@ -39,7 +42,7 @@ function List({ data, set_records }) {
             <td>{item.hobby.join(", ")}</td>
 
             <td>
-              <button>Update</button>
+              <button onClick={update_fn}>Update</button>
             </td>
             <td>
               <button
